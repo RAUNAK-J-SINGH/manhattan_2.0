@@ -1,7 +1,7 @@
-from helper_import import text_to_speech
+from helper_import import code_text_to_speech
 
 master = "Akash"
 print(master)
 
-text_to_speech(master)
+code_text_to_speech(master)
 
