@@ -1,10 +1,10 @@
 import subprocess
-import pyttsx3 as pyt
+import pyttsx3
 
 
-def text_to_speech(text):
+def code_text_to_speech(message):
    # Initialize the text-to-speech engine
-   engine = pyt.init()
+   engine = pyttsx3.init()
 
    # Set the voice
    engine.setProperty("voice", "english_male")
@@ -13,7 +13,8 @@ def text_to_speech(text):
    engine.setProperty("rate", 150)
 
    # Convert the text to speech
-   text = "This is a test of the text-to-speech engine."
+   # text = "This is a test of the text-to-speech engine."
+   text = message
    engine.say(text)
 
    # Play the speech
