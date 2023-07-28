@@ -1,7 +1,8 @@
-from helper_import import code_text_to_speech
+from helper_import import code_text_to_speech, GUI
 
-master = "Akash"
-print(master)
+user_speech = "Akash"
+# print(user_speech)
 
-code_text_to_speech(master)
+# code_text_to_speech(user_speech)
+GUI(user_speech)
 
